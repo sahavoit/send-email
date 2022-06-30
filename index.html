@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/select.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>Send form</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="form">
+			<form action="#" id="form" class="form__body">
+				<h1 class="form__title">Send data to email</h1>
+				<div class="form__item">
+					<label for="formName" class="form__label">Name*:</label>
+					<input type="text" name="name" id="fornName" class="form__input _req">
+				</div>
+				<div class="form__item">
+					<label for="formEmail" class="form__label">E-mail*:</label>
+					<input type="text" name="email" id="fornEmail" class="form__input _req _email">
+				</div>
+				<div class="form__item">
+					<div class="form__label">Left or Right?</div>
+					<div class="options">
+						<div class="option__item">
+							<input type="radio" name="hand" checked value="right" id="formRightHanded"
+								class="option__input">
+							<label for="formRightHanded" class="options__label"><span>Right</span> </label>
+						</div>
+						<div class="option__item">
+							<input type="radio" name="hand" value="Left" id="formLeftHanded" class="option__input">
+							<label for="formLeftHanded" class="options__label"><span>Left</span></label>
+						</div>
+					</div>
+				</div>
+				<div class="form__item">
+					<label for="formMessage" class="form__label">Message:</label>
+					<textarea name="message" id="formMessage" class="form__input"></textarea>
+				</div>
+				<div class="form__item">
+					<div class="form__label">Age:</div>
+					<select name="age" class="select">
+						<option value="from 18 to 25" selected>Junior</option>
+						<option value="from 25 to 45">Old</option>
+						<option value="from 45">Super star</option>
+					</select>
+				</div>
+				<div class="form__item">
+					<div class="form__label">Attach foto</div>
+					<div class="file">
+						<div class="file__item">
+							<input accept=".jpg, .png, .gif" type="file" id="formImage" name="image"
+								class="file__input">
+							<div class="file__button">Accept</div>
+						</div>
+						<div id="formPreview" class="file__preview"></div>
+					</div>
+				</div>
+				<div class="form__item">
+					<div class="checkbox">
+						<input type="checkbox" checked name="agreement" id="formAgreement"
+							class="checkbox__input _req ">
+						<label for="formAgreement" class="checkbox__label">I accept all private and commercial
+							agreements
+							and for processing my all personal data<a href="#">Agreement</a></label>
+					</div>
+				</div>
+				<button type="submit" class="form__button">Send</button>
+			</form>
+		</div>
+	</div>
+	<script src="js/select.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
